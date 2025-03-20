@@ -13,7 +13,7 @@ export default function MobileAppSection() {
 
                 {/* Right Side - Text Content */}
                 <div className="w-full lg:w-2/3 p-3"  style={{ fontFamily: "'Open Sans', sans-serif" }}>
-                    <h2 className="text-[40px]  font-bold text-gray-900">
+                    <h2 className="text-[40px]  font-bold text-[#0d1028]">
                         Easy to Access with 
                         <span className="text-[40px] text-orange-500"> Mobile APP</span>
                     </h2>

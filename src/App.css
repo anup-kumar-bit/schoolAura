@@ -1,4 +1,29 @@
 .bg-custom-gradient {
     background: linear-gradient(-190deg, #0d1028 75%, white 25%);
 }
+.bg-custom-gradient2 {
+    background: linear-gradient(180deg, white 50%, #0d1028 50%);
+}
+
+.splide__pagination {
+    display: flex;
+    gap: 8px; 
+    align-items: center;
+    justify-content: center;
+}
+
+.splide__pagination__page {
+    width: 30px !important; 
+    height: 4px !important; 
+    background: gray !important; 
+    border-radius: 2px !important; 
+    border: none !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #ff1e00 !important; 
+    height: 4px !important;
+}
+
   

@@ -6,6 +6,7 @@ import MobileAppSection from "@/components/Home-Page-Components/Mobile/Mobile";
 import Benefits from "@/components/Home-Page-Components/Benefits/Benefits";
 import HappyCustomers from "@/components/Home-Page-Components/HappyCustomers/HappyCustomers";
 import ImageGallery from "@/components/Home-Page-Components/ImageGallery/ImageGallery";
+import ParentReview from "@/components/Home-Page-Components/ParentReview/ParentReview";
 
 export default function HomePage(){
     return(
@@ -18,6 +19,7 @@ export default function HomePage(){
             <Benefits></Benefits>
             <HappyCustomers/>
             <ImageGallery/>
+            <ParentReview/>
         </div>
     )
 }

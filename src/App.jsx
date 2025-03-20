@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 ,delay:200});
   }, []);
 
   return (
