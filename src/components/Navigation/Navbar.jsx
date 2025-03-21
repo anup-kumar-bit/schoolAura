@@ -9,7 +9,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Head from "./Head";
-import TemporaryDrawer from "./sliderBar";
+import SlideBar from "./SliderBar";
 
 export default function Navbar1() {
     return (
@@ -73,7 +73,7 @@ export default function Navbar1() {
                         {/* ---------drawer for phone---------- */}
                     </div>
                         <div className="block xl:hidden">
-                        <TemporaryDrawer/>
+                        <SlideBar/>
                         </div>
                 </div>
             </header>
