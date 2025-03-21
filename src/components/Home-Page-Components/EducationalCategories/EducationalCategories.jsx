@@ -15,7 +15,7 @@ export default function EducationalCategories() {
                 PROVIDE <span className="text-orange-500">BEST EDUCATIONAL</span>
             </h2>
 
-            <div className="flex flex-col sm:flex-row h-auto sm:h-[260px] shadow-[0_2px_15px_rgba(0,0,0,0.8)] border-[1px] border-[#343541]" data-aos="fade-up">
+            <div className="flex flex-col sm:flex-row h-auto sm:h-[260px] shadow-[0_2px_15px_rgba(0,0,0,0.8)] " data-aos="fade-up">
                 {/*--------- Classes Categories ---------*/}
                 <div className="w-full sm:w-1/4 sm:flex flex-row grid grid-cols-2 grid-rows-2 sm:flex-col sm:border-r">
                     {categories.map((category, index) => (
@@ -46,8 +46,8 @@ export default function EducationalCategories() {
                                     <h3 className="p-0 m-0 absolute -right-1 -bottom-1 font-extrabold text-[#343541]">N</h3>
                                 </div>
                                 <div className="ml-3">
-                                    <p className="text-orange-500 font-semibold text-[16px] sm:text-[20px] leading-[100%]">{classes}</p>
-                                    <p className="text-gray-600 text-[14px] text-lg">{Math.floor(Math.random() * 100) + 80}+</p>
+                                    <p className="text-orange-500 font-semibold text-[16px] lg:text-[20px] leading-[100%]">{classes}</p>
+                                    <p className="text-gray-600 text-[14px] lg:text-lg">{Math.floor(Math.random() * 100) + 80}+</p>
                                 </div>
                             </div>
                         ))

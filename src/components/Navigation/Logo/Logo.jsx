@@ -1,6 +1,6 @@
 export default function Logo() {
     return (
-        <div className="flex items-center h-12 w-12 left-0 border-2 border-black z-10">
+        <div className="flex items-center h-12 w-12 left-0 z-10">
             <img
                 src="/logo-cloud.png"
                 alt="Logo"

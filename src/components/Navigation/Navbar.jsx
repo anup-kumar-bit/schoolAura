@@ -2,14 +2,9 @@ import React from "react";
 import Logo from "./Logo/Logo";
 import { FaSchool } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import Head from "./Head";
 import SlideBar from "./SliderBar";
+import Dropdown from "./Dropdown/Dropdown";
 
 export default function Navbar1() {
     return (
@@ -21,47 +16,31 @@ export default function Navbar1() {
                     <Logo />
 
                     {/* Right Side: Navigation Links */}
-                    <div className="hidden xl:flex items-center gap-4 ">
+                    <div className="hidden xl:flex items-center gap-0 ">
                         {/*----- Home -----*/}
-                        <a href="/" className="hover:text-yellow-300 transition-colors">
+                        <a href="/" className="hover:text-yellow-300 transition-colors px-4 py-2">
                             Home
                         </a>
-
-                        {/* ----------Drop Down Menu ----------- */}
-                        <DropdownMenu >
-                            <DropdownMenuTrigger className="flex items-center">Exam Solution <IoMdArrowDropdown className="text-2xl" /></DropdownMenuTrigger>
-                            <DropdownMenuContent className={'rounded-sm  bg-[#00000062] p-0 border-red-500 '}>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>1st-12th Exam</DropdownMenuItem>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Compitative Exam</DropdownMenuItem>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Entrance Exam</DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                        {/* ---------------------------------------------------- */}
-                        <DropdownMenu >
-                            <DropdownMenuTrigger className="flex items-center">Online Study <IoMdArrowDropdown className="text-2xl" /></DropdownMenuTrigger>
-                            <DropdownMenuContent className={'rounded-sm  bg-[#00000062] p-0 border-red-500 '}>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>1st-12th Exam</DropdownMenuItem>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Compitative Exam</DropdownMenuItem>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Entrance Exam</DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                        {/* ---------------------------------------------------- */}
-                        <DropdownMenu >
-                            <DropdownMenuTrigger className="flex items-center">Tutor Solution <IoMdArrowDropdown className="text-2xl" /></DropdownMenuTrigger>
-                            <DropdownMenuContent className={'rounded-sm  bg-[#00000062] p-0 border-red-500 '}>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Find Tutor</DropdownMenuItem>
-                                <DropdownMenuItem className={'rounded-none border-b-[1px] border-red-500 text-white focus:text-yellow-300 focus:bg-transparent'}>Become Tutor</DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-
+                        <Dropdown
+                            title="Exam Solution"
+                            items={["1st-12th Exam", "Competitive Exam", "Entrance Exam"]}
+                        />
+                        <Dropdown
+                            title="Online Study"
+                            items={["1st-12th Exam", "Competitive Exam", "Entrance Exam"]}
+                        />
+                        <Dropdown
+                            title="Tutor Solution"
+                            items={["Find Tutor", "Become Tutor"]}
+                        />
 
                         {/*----- Blogs -----*/}
-                        <a href="/blogs" className=" hover:text-yellow-300 transition-colors">
+                        <a href="/blogs" className=" hover:text-yellow-300 transition-colors px-4 py-2  ">
                             Blogs
                         </a>
 
                         {/*--- Contact Us ---*/}
-                        <a href="/contact" className=" hover:text-yellow-300 transition-colors">
+                        <a href="/contact" className=" hover:text-yellow-300 transition-colors px-4 py-2    ">
                             Contact Us
                         </a>
 
