@@ -17,17 +17,17 @@ export default function Navbar1() {
             <Head />
             <header className="font-sans text-[16px] bg-[#ff5202] text-white max-h-[60px]" style={{ fontFamily: "'Open Sans', sans-serif" }}>
                 <div className="w-full mx-auto flex justify-between items-center px-[30px] xl:px-[100px] shadow-sm relative ">
-                    {/* Left Side: Logo */}
+                    {/* ----------Logo School Aura ---------- */}
                     <Logo />
 
                     {/* Right Side: Navigation Links */}
                     <div className="hidden xl:flex items-center gap-4 ">
-                        {/* Home */}
+                        {/*----- Home -----*/}
                         <a href="/" className="hover:text-yellow-300 transition-colors">
                             Home
                         </a>
 
-                        {/* Dropdown: ExamSolution, Online Study, Tutor Solution, TutorStudy */}
+                        {/* ----------Drop Down Menu ----------- */}
                         <DropdownMenu >
                             <DropdownMenuTrigger className="flex items-center">Exam Solution <IoMdArrowDropdown className="text-2xl" /></DropdownMenuTrigger>
                             <DropdownMenuContent className={'rounded-sm  bg-[#00000062] p-0 border-red-500 '}>
@@ -55,26 +55,26 @@ export default function Navbar1() {
                         </DropdownMenu>
 
 
-                        {/* Blogs */}
+                        {/*----- Blogs -----*/}
                         <a href="/blogs" className=" hover:text-yellow-300 transition-colors">
                             Blogs
                         </a>
 
-                        {/* Contact Us */}
+                        {/*--- Contact Us ---*/}
                         <a href="/contact" className=" hover:text-yellow-300 transition-colors">
                             Contact Us
                         </a>
 
-                        {/* School Management */}
+                        {/*--- School Management ---*/}
                         <div className="flex items-center gap-2 bg-[#0d1028] text-white px-4 py-2 rounded max-h-[34px]">
                             <FaSchool className="text-xl" />
                             <span>School Management</span>
                         </div>
                         {/* ---------drawer for phone---------- */}
                     </div>
-                        <div className="block xl:hidden">
-                        <SlideBar/>
-                        </div>
+                    <div className="block xl:hidden text-3xl">
+                        <SlideBar />
+                    </div>
                 </div>
             </header>
         </>

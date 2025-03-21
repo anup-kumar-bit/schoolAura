@@ -3,7 +3,7 @@ export default function MobileAppSection() {
         <div className="bg-gray-100 my-[50px] overflow-hidden">
             <div className="w-full flex flex-col lg:flex-row items-center gap-6">
                 {/* Left Side - Mobile Image */}
-                <div className="w-[650px] sm:w-1/3 h-[400px]">
+                <div className="w-[650px] h-[400px] sm:w-full lg:w-1/3 ">
                     <img
                         src="/school_aura_app.jpg"
                         alt="School Aura Mobile App"

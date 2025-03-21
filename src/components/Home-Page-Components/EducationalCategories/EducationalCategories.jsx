@@ -9,15 +9,14 @@ const categories = [
 
 export default function EducationalCategories() {
     const [activeCategory, setActiveCategory] = useState(categories[0]);
-    categories.map((el) => console.log(el))
     return (
-        <div className="min-h-[] max-w-[1140px] mx-auto my-[50px] sm:my-[100px] bg-white overflow-hidden">
+        <div className=" max-w-[1140px] mx-auto my-[50px] sm:my-[100px] bg-white overflow-hidden">
             <h2 className="text-[32px] sm:text-[40px] font-bold text-black flex flex-col leading-[100%] m-[10px] mb-[15px]">
                 PROVIDE <span className="text-orange-500">BEST EDUCATIONAL</span>
             </h2>
 
             <div className="flex flex-col sm:flex-row h-auto sm:h-[260px] shadow-[0_0_12px_rgba(0,0,0,0.4)]" data-aos="fade-up">
-                {/* Left Sidebar - Categories */}
+                {/*--------- Classes Categories ---------*/}
                 <div className="w-full sm:w-1/4 sm:flex flex-row grid grid-cols-2 grid-rows-2 sm:flex-col sm:border-r">
                     {categories.map((category, index) => (
                         <button
@@ -34,7 +33,7 @@ export default function EducationalCategories() {
                     ))}
                 </div>
 
-                {/* Right Section - Class List */}
+                {/*---------- Classes List ----------*/}
                 <div className="w-full sm:w-3/4 p-4 grid  grid-cols-2 grid-rows-5 sm:grid-cols-4 sm:grid-rows-3 gap-2 ">
                     {activeCategory.classes.length > 0 ? (
                         activeCategory.classes.map((classes, index) => (

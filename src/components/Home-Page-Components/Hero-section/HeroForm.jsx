@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Image from "next/image";
 
 export default function LoginForm() {
     const [activeTab, setActiveTab] = useState("student");
@@ -7,44 +6,41 @@ export default function LoginForm() {
     const [parent, setParent] = useState({ email: "", password: "" });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    // Validation Function
     const validateForm = (type) => {
-        let valid = true;
         if (type === "student") {
             if (!student.email) {
                 alert("Student Email or Mobile is required.");
-                valid = false;
+                return false
             }
             if (!student.password) {
                 alert("Student Password is required.");
-                valid = false;
+                return false
             }
         } else {
             if (!parent.email) {
                 alert("Parent Email or Mobile is required.");
-                valid = false;
+                return false
             }
             if (!parent.password) {
                 alert("Parent Password is required.");
-                valid = false;
+                return false
             }
         }
-        return valid;
+        return true;
     };
 
-    // Handle Form Submission
     const handleSubmit = (e, type) => {
         e.preventDefault();
         setIsSubmitting(true);
         if (validateForm(type)) {
-            alert(`${type} login successful!`);
+            alert(`login successful!`);
         }
         setTimeout(() => setIsSubmitting(false), 1000);
     };
 
     return (
         <div className="container p-6 bg-white max-w-[400px] lg:max-w-[300px] max-h-[353px] shadow-[0_0_15px_rgba(0,0,0,0.8)] rounded-lg relative ">
-            {/* Avatar Section */}
+            {/*--------- Avatar ---------*/}
             <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 w-24 h-24 overflow-hidden rounded-full border-4 border-white shadow-md">
                 <img
                     src="/user-img.png"
@@ -55,7 +51,7 @@ export default function LoginForm() {
 
             <div className="mt-10"></div>
 
-            {/* Tabs */}
+            {/*--------- Tabs Parent / Student ---------*/}
             <div className="flex border-b mb-4 justify-center gap-2">
                 <button
                     disabled={isSubmitting}
@@ -79,7 +75,7 @@ export default function LoginForm() {
                 </button>
             </div>
 
-            {/* Student Login Form */}
+            {/*----------- Student Login Form -----------*/}
             {activeTab === "student" && (
                 <form onSubmit={(e) => handleSubmit(e, "student")} className="space-y-4">
                     <input
@@ -109,7 +105,7 @@ export default function LoginForm() {
                 </form>
             )}
 
-            {/* Parent Login Form */}
+            {/*----------- Parent Login Form -----------*/}
             {activeTab === "parent" && (
                 <form onSubmit={(e) => handleSubmit(e, "parent")} className="space-y-4">
                     <input

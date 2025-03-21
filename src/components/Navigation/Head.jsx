@@ -4,7 +4,7 @@ import { IoMail } from "react-icons/io5";
 export default function Head() {
     return (
         <header className="font-sans text-xs sm:text-[14px]" style={{ fontFamily: "'Open Sans', sans-serif" }}>
-            {/* Main Container */}
+            {/* -------------- Container --------------*/}
             <div className="w-full mx-auto flex justify-between px-[30px] xl:px-[100px] py-[5px] items-center bg-white  max-h-[38px]">
                 {/* Contact Details */}
                 <div className="flex gap-6">
@@ -24,11 +24,11 @@ export default function Head() {
                     </div>
                 </div>
 
-                {/* Social Links and User Buttons */}
+                {/* ---------------------- Social Media ----------------*/}
                 <div className="hidden md:flex items-center ">
-                    {/* Social Icons */}
+
                     <div className="hidden lg:flex items-center ">
-                        {/* WhatsApp */}
+                        {/*------------------ WhatsApp --------------------*/}
                         <div className="flex items-center mx-[7px] rounded-sm bg-green-600 text-white px-2 py-1">
                             <a href="https://wa.link/bop2zv" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                                 <FaWhatsapp className="text-xl" />
@@ -36,7 +36,7 @@ export default function Head() {
                             </a>
                         </div>
 
-                        {/* Mobile App */}
+                        {/*------------------ Mobile App --------------------*/}
                         <div className="flex items-center mx-[7px] rounded-sm text-white px-2 py-1 bg-[#a4c639]">
                             <a href="https://play.google.com/store/apps/details?id=com.schoolaura" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                                 <FaMobileAlt className="text-xl" />
@@ -45,7 +45,7 @@ export default function Head() {
                         </div>
                     </div>
 
-                    {/* Login and Registration */}
+                    {/*------------------- Login and Registration -------------------*/}
                     <div className="flex items-center ">
                         <a href="/account/login" className="text-white px-3 py-1 hover:opacity-80 transition-opacity mx-[7px] rounded-sm bg-[#0d1028]">
                             Login

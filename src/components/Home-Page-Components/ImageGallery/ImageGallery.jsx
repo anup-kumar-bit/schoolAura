@@ -4,10 +4,9 @@ export default function ImageGallery() {
     return (
         <div className="w-full my-20  md:px-8">
             <div className="container relative bg-[#f1f1f1] mx-auto max-w-[1140px] md:h-[430px] flex flex-col md:flex-row items-center p-6 md:p-0">
-                {/* Background Accent */}
                 <div className="absolute h-[97%] w-1/4 top-1 left-0 bg-[#0d1028] hidden md:block"></div>
                 
-                {/* Video Section */}
+                {/*------------ Youtube Vedio -------------*/}
                 <div className="relative w-full md:w-1/2 h-[250px] md:h-[400px] flex justify-center">
                     <iframe
                         className="w-full h-full"
@@ -19,7 +18,7 @@ export default function ImageGallery() {
                     ></iframe>
                 </div>
 
-                {/* Text Section */}
+                {/*------------- Content --------- */}
                 <div className="w-full md:w-1/2 text-center md:text-left space-y-4 p-4 md:p-[30px]" data-aos="fade-up" style={{ fontFamily: "'Open Sans', sans-serif" }}>
                     <h1 className="text-3xl md:text-4xl font-bold text-[#0d1028] leading-[102%]">
                         VISIT OUR CAMPUS WITH
