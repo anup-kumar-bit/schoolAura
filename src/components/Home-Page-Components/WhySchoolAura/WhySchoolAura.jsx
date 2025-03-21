@@ -2,11 +2,11 @@ import '../../../App.css'
 
 export default function WhySchoolAura() {
     return (
-        <div className="container mx-auto max-w-[1140px] h-[700px] border-2 border-black overflow-hidden">
-            <div className="flex flex-col lg:flex-row  h-[332px]  ">
+        <div className="container h-[975px] sm:h-[830px] lg:h-[700px]  mx-auto max-w-[1140px] overflow-hidden mt-10">
+            <div className="flex flex-col lg:flex-row h-[332px]  ">
                 {/* Left Section */}
-                <div className="lg:w-[372px] lg:h-[477px] relative flex flex-col items-center text-center lg:text-left  z-0">
-                    <div className="bg-gray-200 p-4  h-[477px] bg-custom-gradient">
+                <div className="lg:w-[372px] lg:h-[477px] relative flex flex-col items-center text-center  lg:text-left  z-0">
+                    <div className="bg-gray-200 p-4 w-full sm:w-auto  h-[477px] bg-custom-gradient">
                         <img src="/Clip.png" alt="clip" className="w-full h-auto" />
                     </div>
                     <ul className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white w-[240px] ">
@@ -18,7 +18,7 @@ export default function WhySchoolAura() {
                 </div>
 
                 {/* Right Section */}
-                <div className="lg:w-2/3 px-[60px] py-[20px]">
+                <div className="lg:w-2/3 px-[20px] md:px-[30px] lg:px-[60px] py-[20px]">
                     <h2 className="text-[34px] font-bold text-gray-800">
                         Why Online Study With SchoolAura
                     </h2>

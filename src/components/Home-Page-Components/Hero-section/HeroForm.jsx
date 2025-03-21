@@ -43,7 +43,7 @@ export default function LoginForm() {
     };
 
     return (
-        <div className="container mx-auto p-6 bg-white max-w-[300px] max-h-[353px] shadow-[0_0_15px_rgba(0,0,0,0.8)] rounded-lg relative">
+        <div className="container p-6 bg-white max-w-[400px] lg:max-w-[300px] max-h-[353px] shadow-[0_0_15px_rgba(0,0,0,0.8)] rounded-lg relative ">
             {/* Avatar Section */}
             <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 w-24 h-24 overflow-hidden rounded-full border-4 border-white shadow-md">
                 <img
@@ -53,7 +53,7 @@ export default function LoginForm() {
                 />
             </div>
 
-            <div className="mt-10">{/* Push content down due to avatar */}</div>
+            <div className="mt-10"></div>
 
             {/* Tabs */}
             <div className="flex border-b mb-4 justify-center gap-2">

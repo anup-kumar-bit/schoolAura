@@ -1,10 +1,10 @@
 export default function Benefits() {
     return (
         <div className="container mx-auto max-w-[1140px] py-12 overflow-hidden">
-            <div className="flex flex-col lg:flex-row items-startjustify-center gap-2 px-3"  data-aos="fade-up" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+            <div className="flex flex-col lg:flex-row items-start justify-center gap-8 sm:gap-2 px-3"  data-aos="fade-up" style={{ fontFamily: "'Open Sans', sans-serif" }}>
                 {/* Left Content */}
                 <div className="w-full lg:w-2/3 ">
-                    <h2 className="text-[40px] flex flex-col leading-[110%] font-bold text-gray-900">
+                    <h2 className="text-[32px] sm:text-[40px] flex flex-col leading-[110%] font-bold text-gray-900">
                         Benefits of <span className="text-[#ff5202]">Online Education</span>
                     </h2>
                     <div className="w-32 border-b-[1px] border-[#212529] mt-[12px] mb-[35px]"></div>
@@ -27,34 +27,34 @@ export default function Benefits() {
 
                 {/* Right Image */}
                 <div className="relative w-full lg:w-1/3 flex justify-center ">
-                <div className="absolute top-[25%] rounded-full left-[20%] w-[100px] h-[100px] bg-[#f1f1f1] -z-10"></div>
+                <div className="absolute top-[25%] rounded-full left-[20%] w-[100px] h-[100px] bg-[#f1f1f1] -z-10 "></div>
                     <img
                         src="/spreading.png"
                         alt="Online Education Benefits"
-                        className="max-h-[460px] max-w-[245px]"
+                        className="w-[180px] sm:w-[245px] sm:max-h-[460px]  sm:max-w-[245px]"
                     />
                 </div>
             </div>
 
             {/* Stats Section */}
             <div className="relative rounded-xs overflow-hidden -translate-y-9 z-0" data-aos="fade-up">
-                <img src="/Clip2.png" alt="clip" className="h-full w-full absolute top-0 right-0 left-0" />
+                <img src="/Clip2.png" alt="clip" className="h-full w-full absolute top-0 right-0 left-0  object-cover" />
                 <div className="bg-gradient-to-b from-[#0d1028] to-[#0d1028]  text-white py-6 px-8  grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <h3 className="text-[40px] font-bold">10000+</h3>
-                        <p className="text-[#ff5202] text-[24px]">Total Exams</p>
+                    <div>   
+                        <h3 className="text-[28px] sm:text-[40px] font-bold">10000+</h3>
+                        <p className="text-[#ff5202]  text-[18px] sm:text-[24px]">Total Exams</p>
                     </div>
                     <div>
-                        <h3 className="text-[40px] font-bold">600+</h3>
-                        <p className="text-[#ff5202] text-[24px]">Courses</p>
+                        <h3 className="text-[28px] sm:text-[40px] font-bold">600+</h3>
+                        <p className="text-[#ff5202]  text-[18px] sm:text-[24px]">Courses</p>
                     </div>
                     <div>
-                        <h3 className="text-[40px] font-bold">3000+</h3>
-                        <p className="text-[#ff5202] text-[24px]">Success Stories</p>
+                        <h3 className="text-[28px] sm:text-[40px] font-bold">3000+</h3>
+                        <p className="text-[#ff5202]  text-[18px] sm:text-[24px]">Success Stories</p>
                     </div>
                     <div>
-                        <h3 className="text-[40px] font-bold">4.5/5</h3>
-                        <p className="text-[#ff5202] text-[24px]">Rating</p>
+                        <h3 className="text-[28px] sm:text-[40px] font-bold">4.5/5</h3>
+                        <p className="text-[#ff5202]  text-[18px] sm:text-[24px]">Rating</p>
                     </div>
                 </div>
             </div>

@@ -1,21 +1,21 @@
 export default function MobileAppSection() {
     return (
-        <div className="bg-gray-100 my-[50px]">
+        <div className="bg-gray-100 my-[50px] overflow-hidden">
             <div className="w-full flex flex-col lg:flex-row items-center gap-6">
                 {/* Left Side - Mobile Image */}
-                <div className="w-1/3 h-[400px]">
+                <div className="w-[650px] sm:w-1/3 h-[400px]">
                     <img
                         src="/school_aura_app.jpg"
                         alt="School Aura Mobile App"
-                        className="w-full h-full object-fill"
+                        className="w-full h-full object-right object-fill"
                     />
                 </div>
 
                 {/* Right Side - Text Content */}
-                <div className="w-full lg:w-2/3 p-3"  style={{ fontFamily: "'Open Sans', sans-serif" }}>
-                    <h2 className="text-[40px]  font-bold text-[#0d1028]">
+                <div className="w-full lg:w-2/3 p-3 py-12 sm:p-3"  style={{ fontFamily: "'Open Sans', sans-serif" }}>
+                    <h2 className="text-[32px] sm:text-[40px] leading-[120%]  font-bold text-[#0d1028]">
                         Easy to Access with 
-                        <span className="text-[40px] text-orange-500"> Mobile APP</span>
+                        <span className="text-[32px] sm:text-[40px]   text-orange-500"> Mobile APP</span>
                     </h2>
                     <p className="mt-1 text-gray-700 leading-relaxed">
                         If you're looking for easily accessible resources for your

@@ -43,11 +43,11 @@ export default function Cards() {
     ];
 
     return (
-        <div className="container mx-auto max-w-[1140px] text-center p-[15px] py-[50px]" style={{ fontFamily: "'Open Sans', sans-serif" }}>
-            <h2 className="text-[40px] m-0 font-bold text-[#0d1028]">
+        <div className="container mx-auto max-w-[1140px] text-center px-[30px] sm:p-[15px] py-[50px]" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+            <h2 className="text-[32px] sm:text-[40px] m-0 font-bold text-[#0d1028]">
                 BENEFITS OF SCHOOLAURA
             </h2>
-            <h3 className="text-[40px] m-0 text-[#FF5202] font-bold">FOR STUDENT</h3>
+            <h3 className="text-[32px] sm:text-[40px] m-0 text-[#FF5202] font-bold">FOR STUDENT</h3>
 
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {benefits.map((benefit, index) => (

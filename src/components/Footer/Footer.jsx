@@ -8,7 +8,7 @@ export default function Footer() {
         <Subscribe />
         <footer className="relative bg-[#0d1028] text-white pt-10" style={{ fontFamily: "'Open Sans', sans-serif" }}>
             {/* Footer Links Section */}
-            <div className="container mx-auto max-w-[1140px] py-10 border-b-[1px] border-gray-400" data-aos="fade-up">
+            <div className="container mx-auto max-w-[1140px] py-10 pl-8 sm:pl-4 border-b-[1px] border-gray-400" data-aos="fade-up">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {/* About Us */}
                     <div>
@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
 
             {/* Footer Contact Section */}
-            <div className="py-6">
+            <div className="py-6 px-4 sm:px-1">
                 <div className="container mx-auto max-w-[1140px] grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                     <div className="flex items-center space-x-3">
                         <FaPhoneAlt className="text-white h-12 w-12 p-1 mr-4 bg-gray-400 rounded-full text-2xl" />
@@ -88,7 +88,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="w-full bg-[#06091b] py-8 flex justify-center text-gray-100  text-center flex-col md:flex-row md:justify-between px-4 text-[16px]">
+            <div className="w-full bg-[#06091b] py-8 flex justify-center text-gray-100  text-center flex-row md:justify-between px-4 text-[16px]">
                 <p className="w-1/2">2021 © SchoolAura. All Rights Reserved</p>
                 <p className="w-1/2">Design & Development by <a href="http://insoftlink.com" target="_blank" className="text-[#ff5202]">Insoftlink Software</a></p>
             </div>
