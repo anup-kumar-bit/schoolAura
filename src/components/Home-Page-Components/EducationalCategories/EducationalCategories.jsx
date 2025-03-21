@@ -10,12 +10,12 @@ const categories = [
 export default function EducationalCategories() {
     const [activeCategory, setActiveCategory] = useState(categories[0]);
     return (
-        <div className=" max-w-[1140px] mx-auto my-[50px] sm:my-[100px] bg-white overflow-hidden">
+        <div className=" max-w-[1140px] mx-auto my-[50px] sm:my-[100px] bg-white ">
             <h2 className="text-[32px] sm:text-[40px] font-bold text-black flex flex-col leading-[100%] m-[10px] mb-[15px]">
                 PROVIDE <span className="text-orange-500">BEST EDUCATIONAL</span>
             </h2>
 
-            <div className="flex flex-col sm:flex-row h-auto sm:h-[260px] shadow-[0_0_12px_rgba(0,0,0,0.4)]" data-aos="fade-up">
+            <div className="flex flex-col sm:flex-row h-auto sm:h-[260px] shadow-[0_2px_15px_rgba(0,0,0,0.8)] border-[1px] border-[#343541]" data-aos="fade-up">
                 {/*--------- Classes Categories ---------*/}
                 <div className="w-full sm:w-1/4 sm:flex flex-row grid grid-cols-2 grid-rows-2 sm:flex-col sm:border-r">
                     {categories.map((category, index) => (
